@@ -1,0 +1,643 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1088px;
+    padding: 0px 20px;
+    margin: 0px auto;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.btn-primary {
+    width: 136px;
+    padding: 12px 32px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: #56C4C5;
+    border-radius: 24px;
+    border: 1px solid #56C4C5;
+}
+
+.btn-secondary {
+    padding: 8px 28px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: #FF5D50;
+    border-radius: 20px;
+    border: 1px solid #FF5D50;
+}
+
+.btn-top {
+    width: 64px;
+    height: 64px;
+    padding: 20px 0;
+    position: fixed;
+    right: 48px;
+    bottom: 24px;
+    font-weight: 900;
+    border-radius: 100px;
+    z-index: 1;
+}
+
+/*=============================================
+=                    Nav                      =
+=============================================*/
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+nav .container {
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 40px;
+    display: block;
+}
+
+/*=============================================
+=                   Header                    =
+=============================================*/
+
+header {
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/home.svg), url(../images/bg_home.svg);
+    background-repeat: no-repeat;
+    background-position: right 10% center, right center;
+    background-size: auto 80%, auto 100%;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+header p {
+    margin: 0;
+    font-size: 20px;
+}
+
+header .slogan {
+    color: #56C4C5;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header .ball1 {
+    width: 144px;
+    height: 360px;
+    position: absolute;
+    top: calc(100vh - 180px);
+    background-image: url(../images/ball01.svg);
+    background-position: right center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/*=============================================
+=                    Main                     =
+=============================================*/
+
+main {
+    position: relative;
+}
+
+main .ball2 {
+    width: 210px;
+    height: 310px;
+    position: absolute;
+    top: 840px;
+    right: 0;
+    background-image: url(../images/ball02.svg);
+    background-size: cover;
+    z-index: -1;
+}
+
+main .ball3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 224px;
+    left: 96px;
+    background-image: url(../images/ball03.svg);
+    background-size: cover;
+    z-index: -1;
+}
+
+/*=============================================
+=                  Platform                   =
+=============================================*/
+
+.platform {
+    text-align: center;
+}
+
+.platform h2 {
+    margin-top: 100px;
+    margin-bottom: 48px;
+}
+
+.platform li {
+    width: calc(100% / 3);
+    padding: 0px 48px;
+}
+
+.platform img {
+    width: 88px;
+}
+
+.platform h3 {
+    margin: 20px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.platform p {
+    color: #747474;
+    font-size: 16px;
+}
+
+/*=============================================
+=                    Role                     =
+=============================================*/
+
+.role {
+    text-align: center;
+}
+
+.role h2 {
+    margin-top: 100px;
+    margin-bottom: 16px;
+}
+
+.role p {
+    margin-bottom: 48px;
+    font-size: 20px;
+}
+
+.role ul {
+    margin: 0px -8px;
+}
+
+.role li {
+    width: calc(100% / 4 - 16px);
+    margin: 0px 8px;
+    padding-bottom: 8px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px #00000014;
+    background-color: white;
+}
+
+.role li p {
+    margin: 16px 0px;
+    font-size: 16px;
+}
+
+.role .title {
+    color: #56C4C5;
+    font-weight: bold;
+}
+
+/*=============================================
+=                  Content                    =
+=============================================*/
+
+.content {
+    margin-top: 76px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.caption {
+    width: 50%;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caption h2 {
+    margin: 0;
+}
+
+.caption p {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.card {
+    width: 50%;
+}
+
+.card ul {
+    margin-left: -24px;
+}
+
+.card li {
+    width: calc(50% - 48px);
+    margin: 24px;
+    padding: 32px 24px 48px 32px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+}
+
+.card .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    box-shadow: 0px 2px 10px #00000014;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon1 {
+    background-image: url(../images/icon01.svg);
+}
+
+.icon2 {
+    background-image: url(../images/icon02.svg);
+}
+
+.icon3 {
+    background-image: url(../images/icon03.svg);
+}
+
+.icon4 {
+    background-image: url(../images/icon04.svg);
+}
+
+.card h4 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/*=============================================
+=                  Comment                    =
+=============================================*/
+
+.comment {
+    margin: 0 -8px;
+}
+
+.comment h2 {
+    margin-top: 76px;
+    margin-bottom: 104px;
+    text-align: center;
+}
+
+.comment .user {
+    width: calc(100% / 3 - 16px);
+    padding: 48px 32px 24px 32px;
+    margin: 0 8px;
+    position: relative;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -48px;
+    left: 32px;
+    border-radius: 100px;
+}
+
+.comment p {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.comment h5 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.comment hr {
+    margin: 24px 0;
+    border: .5px solid #DDDDDD;
+}
+
+.info {
+    display: flex;
+}
+
+.info .intro {
+    width: 55%;
+}
+
+.info .stars {
+    width: 45%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.info .stars img {
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: 2px;
+}
+
+.pageNum ul {
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 96px;
+}
+
+.pageNum li {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    background-color: #DDDDDD;
+    border-radius: 100px;
+}
+
+.pageNum .actived {
+    width: 16px;
+    background-color: #FFD153;
+    border-radius: 50px;
+}
+
+/*=============================================
+=                   Banner                    =
+=============================================*/
+
+.banner {
+    height: 496px;
+    background-image: url(../images/banner_pc.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.banner .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner h2 {
+    margin-bottom: 48px;
+}
+
+.banner a {
+    margin-bottom: 96px;
+}
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+
+footer {
+    background: #F5F5F5;
+    text-align: center;
+}
+
+footer p {
+    padding: 16px 32px;
+    margin: 0;
+    font-size: 12px;
+}
+
+/*=============================================
+=                   手機版                     =
+=============================================*/
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .btn-top {
+        width: 48px;
+        height: 48px;
+        padding: 12px 0;
+        right: 16px;
+        bottom: 16px;
+    }
+
+    nav img {
+        height: 24px;
+    }
+
+    header {
+        background-image: url(../images/home.svg), url(../images/bg_home_sm.svg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 80%, 100%;
+    }
+
+    header .container {
+        justify-content: flex-start;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    header .slogan {
+        margin-top: 104px;
+    }
+
+    header .ball1 {
+        width: 48px;
+        height: 128px;
+        top: calc(100vh + 72px);
+    }
+
+    main .ball2 {
+        width: 88px;
+        height: 135px;
+        top: 2400px;
+        right: 0;
+    }
+
+    main .ball3 {
+        width: 77px;
+        height: 150px;
+        background-position: right;
+        bottom: 184px;
+        left: 0px;
+    }
+
+    .platform h2 {
+        margin-top: 56px;
+        margin-bottom: 32px;
+    }
+
+    .platform li {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .platform img {
+        width: 64px;
+    }
+
+    .platform h3 {
+        margin: 16px 0px;
+        font-size: 18px;
+    }
+
+    .platform p {
+        margin-bottom: 24px;
+    }
+
+    .role h2 {
+        margin-top: 32px;
+    }
+
+    .role p {
+        margin-bottom: 32px;
+        font-size: 16px;
+    }
+
+    .role ul {
+        margin: 0px;
+        justify-content: center;
+    }
+
+    .role li {
+        width: 80%;
+        margin: 0 0 24px 0;
+    }
+
+    .content {
+        margin-top: 56px;
+        display: block;
+    }
+
+    .caption {
+        width: 100%;
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .caption p {
+        margin-bottom: 28px;
+    }
+
+    .card {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .card ul {
+        margin-left: 0px;
+        justify-content: center;
+    }
+
+    .card li {
+        width: 68%;
+        margin: 0px;
+        margin-bottom: 24px;
+        padding: 32px 24px 48px 24px;
+    }
+
+    .comment h2 {
+        margin-top: 32px;
+        margin-bottom: 80px;
+    }
+
+    .comment .user {
+        width: 100%;
+        padding: 48px 16px 16px 16px;
+    }
+
+    .comment .hidden {
+        display: none;
+    }
+
+    .comment hr {
+        margin: 16px 0;
+    }
+
+    .pageNum ul {
+        margin-bottom: 56px;
+    }
+
+    .pageNum li {
+        width: 8px;
+        height: 8px;
+    }
+
+    .banner {
+        height: 448px;
+        background-image: url(../images/banner_sm.svg);
+    }
+
+    .banner h2 {
+        margin-bottom: 24px;
+        font-size: 20px;
+    }
+
+    .banner a {
+        margin-bottom: 56px;
+    }
+}
